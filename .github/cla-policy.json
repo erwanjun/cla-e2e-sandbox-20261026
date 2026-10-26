@@ -1,0 +1,22 @@
+{
+  "schema": 2,
+  "agreements": {
+    "individual": {
+      "path": "docs/TEST_ONLY_INDIVIDUAL.md",
+      "version": "test-only-20261026",
+      "sha256": "90ae75d9d6ea558e3d584ddd386a7cb26b0338440b7df07d1f493024163e40fe"
+    },
+    "corporate": {
+      "path": "docs/TEST_ONLY_CORPORATE.md",
+      "version": "test-only-20261026",
+      "sha256": "1af7037b71d828dbd4151dd26765523744754c91851f0595892c0db17d698f0c"
+    }
+  },
+  "provider": {
+    "configured": false,
+    "name": null,
+    "check_name": null,
+    "note": "Test-only sandbox; no CLA App has been connected and no legal signature is accepted."
+  },
+  "exemptions": []
+}
