@@ -3,20 +3,26 @@
   "agreements": {
     "individual": {
       "path": "docs/TEST_ONLY_INDIVIDUAL.md",
-      "version": "test-only-20261026",
-      "sha256": "90ae75d9d6ea558e3d584ddd386a7cb26b0338440b7df07d1f493024163e40fe"
+      "version": "1.0",
+      "sha256": "190cbd610f735aef9133194630f4be2fc90b8ad2a5ce51e9e498594ee120aef7"
     },
     "corporate": {
       "path": "docs/TEST_ONLY_CORPORATE.md",
-      "version": "test-only-20261026",
-      "sha256": "1af7037b71d828dbd4151dd26765523744754c91851f0595892c0db17d698f0c"
+      "version": "1.0",
+      "sha256": "4ea81155af11b3ce866bed7ecffc5120a15c67d31104998a3a2fe75b9c55dbc2"
     }
   },
   "provider": {
     "configured": false,
     "name": null,
     "check_name": null,
-    "note": "Test-only sandbox; no CLA App has been connected and no legal signature is accepted."
+    "note": "Unconfigured native CLA provider. Real App connectivity was checked separately with a neutral TEST ONLY Check; that is not a signature, eligibility proof, deployed signing service, or merge approval."
   },
-  "exemptions": []
+  "exemptions": [
+    {
+      "login": "erwanjun",
+      "kind": "rights_holder",
+      "reason": "Explicit sandbox owner exemption. Immutable GitHub account ID 88193520 is pinned in .github/cla-e2e-fixture.json. This exemption is not a signature or proof that a non-exempt contributor has signed."
+    }
+  ]
 }

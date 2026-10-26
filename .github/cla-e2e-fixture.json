@@ -1,0 +1,43 @@
+{
+  "testOnly": true,
+  "identity": {
+    "repository": "erwanjun/cla-e2e-sandbox-20261026",
+    "repositoryId": 1434279607,
+    "holderId": 88193520,
+    "holderName": "TEST ONLY sandbox owner",
+    "appId": 5480322,
+    "appSlug": "erwanjun-cla-e2e-20261026",
+    "installationId": 175465132,
+    "clientId": "Iv23liIfB3rp9SGapg1u",
+    "checkName": "TEST ONLY CLA E2E",
+    "exemptionIds": {
+      "erwanjun": 88193520
+    }
+  },
+  "deployment": {
+    "configured": false,
+    "origin": null,
+    "callback": null,
+    "databaseName": null,
+    "databaseId": null,
+    "referenceSha": null,
+    "evidenceKeyConfigured": false,
+    "oauthClientSecretConfigured": false
+  },
+  "capabilities": {
+    "githubEnabled": false,
+    "oauthEnabled": false,
+    "signingEnabled": false,
+    "checkPublishingEnabled": false,
+    "backgroundEnabled": false,
+    "uiEnabled": false,
+    "ciVerificationEnabled": false,
+    "delegatedCountersigningEnabled": false,
+    "automaticVerificationEnabled": false,
+    "automaticPublishingEnabled": false,
+    "agreementActivationEnabled": false,
+    "confirmationSlotEnabled": false,
+    "mergePrefixAssessmentEnabled": false,
+    "mergePrefixReadSessionEnabled": false
+  }
+}
