@@ -4,23 +4,23 @@
     "repository": "erwanjun/cla-e2e-sandbox-20261026",
     "repositoryId": 1434279607,
     "holderId": 88193520,
-    "holderName": "TEST ONLY sandbox owner",
+    "holderName": "Jiaqi Wan (staging)",
     "appId": 5480322,
     "appSlug": "erwanjun-cla-e2e-20261026",
     "installationId": 175465132,
     "clientId": "Iv23liIfB3rp9SGapg1u",
-    "checkName": "TEST ONLY CLA E2E",
+    "checkName": "Tavotto CLA (staging)",
     "exemptionIds": {
       "erwanjun": 88193520
     }
   },
   "deployment": {
-    "configured": false,
-    "origin": null,
-    "callback": null,
-    "databaseName": null,
-    "databaseId": null,
-    "referenceSha": null,
+    "configured": true,
+    "origin": "https://cla-staging.tavotto.com",
+    "callback": "https://cla-staging.tavotto.com/oauth/callback",
+    "databaseName": "tavotto-cla-staging",
+    "databaseId": "4d253c89-4035-4d04-a330-ffe7edd540f9",
+    "referenceSha": "main commit that carries this policy (recorded in the Tavotto staging config)",
     "evidenceKeyConfigured": false,
     "oauthClientSecretConfigured": false
   },
