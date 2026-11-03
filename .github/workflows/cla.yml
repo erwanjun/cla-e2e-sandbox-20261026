@@ -1,0 +1,33 @@
+# STAGING ONLY. Runs the Tavotto CLA CI consumer from a pinned, trusted Tavotto
+# commit. Nothing from the pull request is checked out or executed.
+name: CLA (staging consumer)
+on:
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+  pull-requests: read
+  checks: read
+jobs:
+  cla:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          repository: Tavotto/Tavotto
+          # Tavotto commit carrying deployment/staging/ci.json (PR #1689); re-pin to main after merge.
+          ref: f83a63de8e64e5a850aa9a647210fc1b8ab698cb
+          path: trusted
+          persist-credentials: false
+          sparse-checkout: services/cla-cloudflare
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: "24"
+      - name: Verify CLA through the staging authority
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >
+          node trusted/services/cla-cloudflare/scripts/ci-candidate.mjs
+          --config trusted/services/cla-cloudflare/deployment/staging/ci.json
+          --event-file "$GITHUB_EVENT_PATH" --event pull_request
