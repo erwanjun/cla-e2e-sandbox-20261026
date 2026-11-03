@@ -16,8 +16,8 @@ jobs:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
           repository: Tavotto/Tavotto
-          # Tavotto commit carrying deployment/staging/ci.json (PR #1689); re-pin to main after merge.
-          ref: f83a63de8e64e5a850aa9a647210fc1b8ab698cb
+          # Tavotto main merge commit of PR #1689 (carries deployment/staging/ci.json).
+          ref: b32683a9359368d9d64fe1c0bbb993c003d20612
           path: trusted
           persist-credentials: false
           sparse-checkout: services/cla-cloudflare
