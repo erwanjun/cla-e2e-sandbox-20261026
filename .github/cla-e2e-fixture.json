@@ -1,0 +1,43 @@
+{
+  "testOnly": true,
+  "identity": {
+    "repository": "erwanjun/cla-e2e-sandbox-20261026",
+    "repositoryId": 1434279607,
+    "holderId": 88193520,
+    "holderName": "Jiaqi Wan (staging)",
+    "appId": 5480322,
+    "appSlug": "erwanjun-cla-e2e-20261026",
+    "installationId": 175465132,
+    "clientId": "Iv23liIfB3rp9SGapg1u",
+    "checkName": "Tavotto CLA (staging)",
+    "exemptionIds": {
+      "erwanjun": 88193520
+    }
+  },
+  "deployment": {
+    "configured": true,
+    "origin": "https://cla-staging.tavotto.com",
+    "callback": "https://cla-staging.tavotto.com/oauth/callback",
+    "databaseName": "tavotto-cla-staging",
+    "databaseId": "4d253c89-4035-4d04-a330-ffe7edd540f9",
+    "referenceSha": "main commit that carries this policy (recorded in the Tavotto staging config)",
+    "evidenceKeyConfigured": false,
+    "oauthClientSecretConfigured": false
+  },
+  "capabilities": {
+    "githubEnabled": false,
+    "oauthEnabled": false,
+    "signingEnabled": false,
+    "checkPublishingEnabled": false,
+    "backgroundEnabled": false,
+    "uiEnabled": false,
+    "ciVerificationEnabled": false,
+    "delegatedCountersigningEnabled": false,
+    "automaticVerificationEnabled": false,
+    "automaticPublishingEnabled": false,
+    "agreementActivationEnabled": false,
+    "confirmationSlotEnabled": false,
+    "mergePrefixAssessmentEnabled": false,
+    "mergePrefixReadSessionEnabled": false
+  }
+}
