@@ -1,1 +1,2 @@
 Isolated GitHub plumbing fixture: initial state.
+S5 exempt probe 2026-11-03T15:42:58Z
